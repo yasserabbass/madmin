@@ -27,7 +27,7 @@
   </style>
 </head>
 
-<body>
+<body class="grey lighten-4">
   <header>
     <nav class="blue darken-2">
       <div class="nav-wrapper">
@@ -45,9 +45,9 @@
             <li>
               <div class="userView">
                 <div class="background">
-                  <img src="" alt="Background Sidenav">
+                  <img src="http://lorempixel.com/output/abstract-q-c-640-480-10.jpg" alt="Background Sidenav">
                 </div>
-                <a href="#!user"><img class="circle" src="" alt="User Image Sidenav"></a>
+                <a href="#!user"><img class="circle" src="http://lorempixel.com/output/people-q-c-640-480-9.jpg" alt="User Image Sidenav"></a>
                 <a href="#!name"><span class="white-text name">John Doe</span></a>
                 <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
               </div>
@@ -114,19 +114,114 @@
       </div>
     </section>
 
-    <section class="section section-visitors blue ligthen-4">
+    <section class="section section-visitors blue lighten-4">
       <div class="row">
         <div class="col s12 m6 l8">
           <div class="card-panel">
             <canvas id="bar-chart" width="800" height="200"></canvas>
-            <div class="col s12 m6 l4"></div>
           </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <ul class="collection with-header latest-comments">
+            <li class="collection-header">
+              <h5>Latest Tickets</h5>
+            </li>
+            <li class="collection-item avatar">
+              <img src="http://lorempixel.com/output/people-q-c-640-480-3.jpg" class="circle">
+              <span class="title">Hussein Ahmed</span>
+              <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laboriosam voluptatem,
+                dolore totam cum qui tenetur nobis eos animi debitis laudantium esse, vel laborum iusto, consectetur
+                nisi? Facere, enim at.</p>
+              <a href="" class="approve green-text">Accept</a> |
+              <a href="" class="deny red-text">Cancel</a>
+            </li>
+            <li class="collection-item avatar">
+              <img src="http://lorempixel.com/output/people-q-c-640-480-5.jpg" class="circle">
+              <span class="title">Mahmoud Ibrahim</span>
+              <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laboriosam voluptatem,
+                dolore totam cum qui tenetur nobis eos animi debitis laudantium esse, vel laborum iusto, consectetur
+                nisi? Facere, enim at.</p>
+              <a href="" class="approve green-text">Accept</a> |
+              <a href="" class="deny red-text">Cancel</a>
+            </li>
+            <li class="collection-item avatar">
+              <img src="http://lorempixel.com/output/people-q-c-640-480-6.jpg" class="circle">
+              <span class="title">Dalia Mostafa</span>
+              <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laboriosam voluptatem,
+                dolore totam cum qui tenetur nobis eos animi debitis laudantium esse, vel laborum iusto, consectetur
+                nisi? Facere, enim at.</p>
+              <a href="" class="approve green-text">Accept</a> |
+              <a href="" class="deny red-text">Cancel</a>
+            </li>
+          </ul>
         </div>
       </div>
       </div>
     </section>
 
-
+    <section class="section section-recent">
+      <div class="row">
+        <div class="col s12 m6 l8">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Recent Posts</span>
+              <table class="striped">
+                <thead>
+                  <tr>
+                    <th>Title</th>
+                    <th>Category</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Post One</td>
+                    <td>Web Development</td>
+                    <td>
+                      <a href="details.html" class="btn blue lighten-2">Details</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Post Two</td>
+                    <td>Graphics Design</td>
+                    <td>
+                      <a href="details.html" class="btn blue lighten-2">Details</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Post Three</td>
+                    <td>Web Development</td>
+                    <td>
+                      <a href="details.html" class="btn blue lighten-2">Details</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Quick Todos</span>
+              <form action="" id="todo-form">
+                <div class="input-field">
+                  <input type="text" id="todo" placeholder="Add Todo...">
+                </div>
+              </form>
+              <ul class="collection todos">
+                <li class="collection-item">
+                  <div>Todo One <a href="" class="secondary-content delete"><i class="material-icons">close</i></a></div>
+                </li>
+                <li class="collection-item">
+                  <div>Todo Two <a href="" class="secondary-content delete"><i class="material-icons">close</i></a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="loader preloader-wrapper big active">
       <div class="spinner-layer spinner-blue-only">
         <div class="circle-clipper left">
@@ -141,6 +236,22 @@
       </div>
     </div>
   </main>
+
+
+  <footer class="section blue darken-2 white-text center">
+    <p>CRM Admin Copyright &copy; 2019</p>
+  </footer>
+
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">add</i></a>
+    <ul>
+      <li><a href="#post-modal" class="btn-floating blue modal-trigger"><i class="material-icons">mode_edit</i></a></li>
+      <li><a href="#category-model" class="btn-floating yellow"><i class="material-icons">folder</i></a></li>
+      <li><a href="#user-modal" class="btn-floating green"><i class="material-icons">supervisor_account</i></a></li>
+    </ul>
+  </div>
+
 
   <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -169,6 +280,28 @@
               }
             });
         });
+        $('.approve').click(function (e) {
+          Materialize.toast('Tickect Accepted', 3000);
+          e.preventDefault();
+        })
+        $('.deny').click(function (e) {
+          Materialize.toast('Tickect Canceled', 3000);
+          e.preventDefault();
+        })
+        $('#todo-form').submit(function (e) {
+          const output = `<li class="collection-item">
+                  <div>${$('#todo').val()} <a href="" class="secondary-content delete"><i class="material-icons">close</i></a></div>
+                </li>`
+          $('.todos').append(output);
+          $('#todo').val("")
+          Materialize.toast('Todo Added', 3000);
+          e.preventDefault();
+        });
+        $(".todos").on('click', '.delete', function (e) {
+          $(this).parent().parent().remove();
+          Materialize.toast('Todo Remove', 3000);
+          e.preventDefault();
+        })
       });
     }, 1000);
 
